@@ -7,17 +7,11 @@
 }
 
 .landing-page {
-    position: relative;
-}
-
-.landing-page {
     background-color: transparent;
-    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
     padding: 20px 50px;
-    z-index: 9999;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,16 +61,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     text-align: center;
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
-}
-
-.header-text img {
-    width: 150px;
-    height: auto;
-    object-fit: cover;
 }
 
 .text-content h1 {
@@ -91,42 +80,37 @@
 }
 
 .feature-link {
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    transition: transform 0.3s ease;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
 }
 
 .feature-link img {
-    width: 200px;
-    height: auto;
-    object-fit: cover;
+    display: block;
+    width: 250px; /* Adjust width as needed */
+    height: 200px; /* Maintain aspect ratio */
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
-.feature-link span {
-    display: block;
-    margin-top: 10px;
+.feature-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
     font-size: 18px;
 }
 
-.feature-link:hover {
-    transform: scale(1.05);
+.feature-link:hover .feature-text {
+    opacity: 1;
 }
 
 .feature-link:hover img {
     transform: scale(1.1);
-}
-.text-content a {
-    background: #fff;
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 30px;
-    color: #202020;
-    margin-top: 30px;
-    border-radius: 50px;
-    transition: all 0.5s ease;
 }
 
 .text-content a:hover {
@@ -135,72 +119,72 @@
     color: #fff;
 }
 
+#background-video {
+    position: fixed; /* Changed from absolute to fixed to cover the whole page */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Set width to 100% of the viewport width */
+    height: 100vh; /* Set height to 100% of the viewport height */
+    object-fit: cover; /* Cover the entire area without losing aspect ratio */
+    z-index: -1; /* Keep it behind other content */
+}
+
 footer {
     position: fixed;
     bottom: 10px;
-    text-align: center;
     width: 100%;
-}
-
-@keyframes animate {
-    0% {
-        opacity: 0;
-    }
-    8% {
-        opacity: 1;
-        transform: scale(1.05);
-    }
-    17% {
-        opacity: 1;
-        transform: scale(1.1);
-    }
-    25% {
-        opacity: 0;
-        transform: scale(1.1);
-    }
-    100% {
-        opacity: 0;
-    }
+    text-align: center;
+    color: #fff;
 }
 
 @media (max-width: 800px) {
     .navbar {
         flex-direction: column;
-        width: 100%;
-        padding: 0;
-        align-items: center;
+        padding: 10px;
     }
-    .navbar a {
-        font-size: 18px;
-        padding: 5px 25px;
+
+    .navbar nav {
+        flex-direction: column;
+        gap: 10px;
     }
+
     .text-content h1 {
         font-size: 45px;
+    }
+
+    .feature-link img {
+        width: 150px;
     }
 }
 
 @media (max-width: 500px) {
+    .navbar .logo {
+        font-size: 24px;
+    }
+
     .navbar a {
-        font-size: 15px;
-        padding: 8px 12px;
+        font-size: 16px;
     }
-    .text-content h3 {
-        margin-bottom: 10px;
-    }
+
     .text-content h1 {
         font-size: 28px;
     }
+
     .text-content p {
         width: 100%;
-        margin: 15px auto;
-        line-height: 1.5;
-        font-size: 12px;
+        font-size: 14px;
     }
+
     .text-content a {
         padding: 5px 15px;
-        margin-top: 0px;
+        font-size: 14px;
+    }
+
+    .feature-link img {
+        width: 100px;
+    }
+
+    .feature-text {
         font-size: 14px;
     }
 }
-
-

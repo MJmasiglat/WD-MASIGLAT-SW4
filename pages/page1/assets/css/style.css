@@ -1,0 +1,132 @@
+body {
+    padding: 0;
+    color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.landing-page {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.landing-page .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.landing-page nav {
+    display: flex;
+    gap: 20px;
+}
+
+.landing-page a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.landing-page a:hover {
+    color: #fff;
+}
+
+.landing-page a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.4s ease;
+}
+
+.landing-page a:hover::after {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.nav-links .active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.blog {
+    padding: 100px 20px 20px;
+    color: #fff;
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+}
+
+.blog-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-post {
+    margin-bottom: 2rem;
+}
+
+.blog-post h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-height: 400px; /* Added to control image height */
+}
+
+.blog-post p {
+    font-size: 1.2rem;
+}
