@@ -1,31 +1,32 @@
-/* Global Styles */
-body {
-    padding: 0;
+*{
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
-    color: #fff;
-    font-family: Arial, sans-serif;
+    padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-html, body {
-    height: 100%;
+body {
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-/* Container Styles */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
+  /* Header styles */
+header {
+      background-color: #000000;
+      padding: 40px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+  }
 
-/* Header Styles */
 .landing-page {
     background-color: transparent;
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,29 +34,36 @@ html, body {
 }
 
 .landing-page .logo {
-    font-size: 1.75rem;
+    font-size: 28px;
     font-weight: bold;
-    color: #000;
+    color: #fff;
+    margin-left: -40px;
 }
 
-.navbar {
+.landing-page nav {
     display: flex;
-    gap: 20px;
+    gap: 6px;
+    margin-left: -10px;
 }
 
-.navbar a {
+.landing-page nav a {
     text-decoration: none;
-    color: #000;
-    font-size: 1.125rem;
+    font-weight: normal;
+    color: #fff;
+    font-size: 18px;
     position: relative;
     padding: 5px 10px;
 }
 
-.navbar a:hover {
+.landing-page nav a.feature{
+    margin-left: -10px;
+}
+
+.landing-page a:hover {
     color: #fff;
 }
 
-.navbar a::after {
+.landing-page a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -63,101 +71,170 @@ html, body {
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    background: #fff;
+    background: #a7a7a7;
     transition: width 0.4s ease;
 }
 
-.navbar a:hover::after {
+.landing-page a:hover::after {
     width: 100%;
 }
 
-/* Main Section Styles */
-.feature-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
-.feature-page article {
-    width: 80%;
-    margin: 20px 0;
+.navbar a:hover {
+    color: #a7a7a7;
+}
+
+/* Main content styles */
+main {
     padding: 20px;
-    background: #000;
+}
+
+section {
+    margin: 10px 0;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
     text-align: center;
+    width: 80%;
+    max-width: 800px;
 }
 
-.feature-page h1 {
-    font-size: 1.75rem;
-    margin-bottom: 10px;
-    color: #fff;
+article:hover {
+    transform: translateY(-10px);
 }
 
-.feature-page p {
-    font-size: 1.125rem;
-    line-height: 1.6;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.feature-page img {
+article img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 80%;
+    height: auto;
 }
 
-/* Footer Styles */
+article p{
+    margin-top: 20px;
+}
+.learn-more-button:hover {
+    background-color: #ffffff;
+}
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.learn-more-button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Add space between buttons */
+    margin-top: 10px; /* Adjust as needed */
+}
+
+.learn-more-button, .buy-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: transparent; /* Remove background color */
+    color: #007BFF; /* Set text color to match the border */
+    text-decoration: none;
+    border: 2px solid #007BFF; /* Add border */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for color */
+}
+
+.learn-more-button:hover, .buy-now-button:hover {
+    background-color: #007BFF; /* Add background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+.feature-page h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 5px rgb(221, 107, 107);
+}
+
+.feature-page article h1{
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+}
+
+
+/* Footer styles */
 .footer {
-    background-color: #f8f8f8;
-    color: #333;
-    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-nav, .footer-social {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
+    list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-nav li, .footer-social li {
     margin-right: 20px;
 }
 
-.footer-nav li:last-child, .footer-social li:last-child {
-    margin-right: 0;
-}
-
 .footer-nav a, .footer-social a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.footer-social a {
-    color: #666;
+    color: #fff;
+    transition: color 0.3s;
 }
 
 .footer-nav a:hover, .footer-social a:hover {
-    color: #000;
+    color: #a7a7a7;
 }
 
-.footer-social a:hover {
-    text-decoration: underline;
+.footer-social i {
+    margin-right: 5px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social a:hover i {
+    color: #a7a7a7;
 }
 
 .copyright {
     text-align: center;
-    margin-top: 10px;
-    font-size: 0.8rem;
-    color: #888;
+    margin-top: 20px;
 }
