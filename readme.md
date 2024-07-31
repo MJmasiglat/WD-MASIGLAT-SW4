@@ -241,6 +241,6 @@ WD-ProjectName
 ## Resources
 
 <!-- TODO: Add References -->
-
-|   Title          | Purpose              |                   Link                 |
-| IBM |  Content of Feuture  |(https://www.ibm.com/resources/activations/harmonic-state)|
+| Title | Purpose | Link |
+|-|-|-|
+| IBM | Content of Feuture | https://codepen.io/trending](https://www.ibm.com/resources/activations/harmonic-state |
