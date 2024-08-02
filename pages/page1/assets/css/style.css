@@ -11,15 +11,15 @@ body {
     color: #333;
 }
 
-  /* Header styles */
+/* Header styles */
 header {
-      background-color: #000000;
-      padding: 40px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-  }
+    background-color: #000000;
+    padding: 40px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
 .landing-page {
     background-color: transparent;
@@ -125,12 +125,20 @@ article img {
     height: auto;
 }
 
-article p{
+article p {
     margin-top: 20px;
 }
+
+article h3 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 1.2em;
+}
+
 .learn-more-button:hover {
     background-color: #ffffff;
 }
+
 .learn-more-button {
     display: inline-block;
     padding: 10px 20px;
@@ -180,12 +188,11 @@ article p{
     text-shadow: 2px 2px 5px rgb(221, 107, 107);
 }
 
-.feature-page article h1{
+.feature-page article h1 {
     font-size: 2em;
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 }
-
 
 /* Footer styles */
 .footer {
