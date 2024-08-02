@@ -1,86 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feature 1 - Top Laptops</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Feature 2 - Top Smartphones</title>
+   <link rel="stylesheet" href="../../pages/page2/assets/css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="navbar">
+        <div class="container">
             <div class="landing-page">
-                <div class="logo">Seatwork 4</div>
-                <nav class="navbar">
-                    <a href="../../index.html">Home</a>
-                    <a href="#">Feature 1</a>
-                    <a href="../../pages/page2/index.html">Feature 2</a>
-                </nav>
-            </div>
+                <div class="logo">Seatwork 4</div> 
+                <div class="navbar">
+                    <nav>
+                        <a href="../../index.html">Home</a>
+                        <a href="../../pages/page1/index.html">Feature 1</a>
+                        <a href="#">Feature 2</a>   
+                    </nav>
+                </div>
+            </div>  
         </div>
     </header>
 
-    <main class="feature-page">
-        <section>
-            <h2>Latest Smartphones</h2>
-            <article class="feature1">
-                <h1>iPhone 256 Pro</h1>
-                <p><strong>Revolutionary Processing:</strong> Unlock groundbreaking performance with the iPhone 256 Pro’s A17 Bionic chip, delivering unparalleled speed and efficiency. Experience lightning-fast app launches and smooth multitasking, all backed by advanced thermal management.</p>
-                <p><strong>Stunning Visuals:</strong> Immerse yourself in breathtaking visuals with the iPhone 256 Pro’s high-resolution Super Retina XDR display. Enjoy vibrant colors and deep contrasts whether you're streaming content or browsing through photos.</p>
-                <p><strong>Professional Photography:</strong> Capture every detail with the iPhone 256 Pro’s state-of-the-art 48MP camera system. From stunning low-light shots to high-resolution portraits, the advanced optics and computational photography features set a new standard in mobile imaging.</p>
-                <img src="assets/img/iPhone 256 Pro.jpg" alt="iPhone 256 Pro">
-                <div class="button-container">
-                    <a class="learn-more-button" href="#">Learn more</a>
-                </div>
-            </article>
-    
-            <article class="feature2">
-                <h1>Samsung Galaxy Milkyway Ultra</h1>
-                <p><strong>Next-Gen Performance:</strong> Experience exceptional speed and responsiveness with the Samsung Galaxy Milkyway Ultra’s Exynos 2400 processor. Handle demanding applications and multitask effortlessly with cutting-edge hardware designed for peak performance.</p>
-                <p><strong>Immersive Display:</strong> Enjoy a captivating visual experience with the Galaxy Milkyway Ultra’s expansive Dynamic AMOLED display. With rich colors and deep blacks, every image and video looks stunningly vibrant and clear.</p>
-                <p><strong>Pro-Level Photography:</strong> Elevate your photography with the Galaxy Milkyway Ultra’s 200MP camera system. Capture ultra-high-resolution images and videos with precision, and explore creative possibilities with advanced AI-driven features.</p>
-                <img src="assets/img/Samsung Galaxy Milkyway Ultra.jpg" alt="Samsung Galaxy Milkyway Ultra">
-                <div class="button-container">
-                    <a class="learn-more-button" href="#">Learn more</a>
-                </div>
-            </article>
-    
-            <article class="feature3">
-                <h1>Google Pixel Note Pro</h1>
-                <p><strong>Cutting-Edge Intelligence:</strong> Harness the power of Google’s Tensor G4 chip with the Pixel Note Pro, designed to enhance performance and enable advanced AI capabilities. Experience smoother operations and smarter interactions with intuitive, AI-driven enhancements.</p>
-                <p><strong>Brilliant Display:</strong> Enjoy an extraordinary visual experience with the Pixel Note Pro’s high-resolution OLED display. The vibrant colors and sharp contrasts make every photo, video, and app come to life with stunning clarity.</p>
-                <p><strong>Advanced Imaging:</strong> Take your photography to the next level with the Pixel Note Pro’s 64MP camera system. Benefit from superior image quality, advanced night mode, and real-time computational photography features for professional-grade photos.</p>
-                <img src="assets/img/Google Pixel Note Pro.jpg" alt="Google Pixel Note Pro">
-                <div class="button-container">
-                    <a class="learn-more-button" href="#">Learn more</a>
-                </div>
-            </article>
-        </section>
-    </main>
-    
+    <h1>Top Smartphones</h1>
+</header>
+  
+<input type="radio" id="s-1" name="slider-control" checked="checked">
+<input type="radio" id="s-2" name="slider-control">
+<input type="radio" id="s-3" name="slider-control">
+<div class="js-slider">
+  <figure class="js-slider_item img-1">
+    <div class="js-slider_img">
+      <video class="c-img-w-full" src="assets/vids/iPhone 256 Pro.mp4" controls autoplay muted></video>
+    </div>
+    <figcaption class="wo-caption">
+      <h3 class="wo-h3">
+        <div class="c-label">iPhone 256 Pro</div>
+        <br class="view-sm mb-s"></h3>
+      <ul class="wo-credit">
+        <li>iPhone 256 Pro features a stunning Super Retina XDR display, A16 Bionic chip, and advanced camera system.</li>
+      </ul>
+      <div class="button-container">
+        <a class="learn-more-button" href="https://www.gsmarena.com/apple_iphone_14_pro-11860.php/">Learn more</a>
+        <a class="buy-now-button" href="https://www.apple.com/ph/iphone-14-pro/">Buy now</a>
+      </div>
+    </figcaption>
+  </figure>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <ul class="footer-nav">
-                    <li><a href="https://www.kimstore.com/">Shop</a></li>
-                    <li><a href="https://www.apple.com/ph/iphone/">iPhone</a></li>
-                    <li><a href="https://store.google.com/us/?hl=en-US&regionRedirect=true/">Google</a></li>
-                    <li><a href="https://www.samsung.com/ph/offer/fold6-flip6/?cid=ph_pd_ppc_google-ads_f2h24_pre-order_MX-FLAGSHIP-Q6B6-SAMSUNGOMNIBUS-WARM-EXACT_search-text-ads_MX-FLAGSHIP-Q6B6-SAMSUNGOMNIBUS-WARM_none_pfm&utm_source=google-ads&utm_medium=search&utm_campaign=MX-FLAGSHIP-Q6B6-SAMSUNGOMNIBUS-WARM&utm_term=Hot-MX-FLAGSHIP-Q6B6-SAMSUNGOMNIBUS-WARM&utm_content=none&gad_source=1&gclid=Cj0KCQjwtZK1BhDuARIsAAy2Vztsr6pVii_kdb1_SG6HoLz-R2uSuNpc_crinw-UFfItr0ap_389LiYaAuPTEALw_wcB/">Samsung</a></li>
-                    <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBsLrRWH_39PHeG7jN5pVh8PjmXTw0OgIh6Q&s/">Support</a></li>
-                </ul>
-                <ul class="footer-social">
-                    <li><a href="https://www.facebook.com/mikaellaann.masiglat/"><i class="fab fa-facebook"></i> Facebook</a></li>
-                    <li><a href="https://www.instagram.com/mikamasiglat//"><i class="fab fa-instagram"></i> Instagram</a></li>
-                    <li><a href="https://github.com/MJmasiglat/"><i class="fab fa-github"></i> Github</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2024 Masiglat</p>
-            </div>
+  <figure class="js-slider_item img-2">
+    <div class="js-slider_img">
+        <video class="c-img-h-full" src="assets/vids/Galaxy S23 Series.mp4" controls autoplay muted></video>
+    </div>
+    <figcaption class="wo-caption">
+      <h3 class="wo-h3">Samsung Galaxy Milkyway Ultra</h3>
+      <ul class="wo-credit">
+        <li>Samsung Galaxy Milkyway Ultra boasts a large AMOLED display, Snapdragon 8 Gen 2, and a versatile camera setup.</li>
+    </ul>
+    <div class="button-container">
+      <a class="learn-more-button" href="https://www.gsmarena.com/samsung_galaxy_s23_ultra-12024.php/">Learn more</a>
+      <a class="buy-now-button" href="https://www.apple.com/ph/iphone-14-pro/">Buy now</a>
+    </div>
+    </figcaption>
+    
+  </figure>
+  <figure class="js-slider_item img-3">
+    <div class="js-slider_img">
+      <video class="c-img-h-full" src="assets/vids/Pixel 7 Pro.mp4" controls autoplay muted></video></div>
+    <figcaption class="wo-caption">
+      <h3 class="wo-h3">Google Pixel Note Pro</h3>
+      <ul class="wo-credit">
+        <li>The Google Pixel 7 Pro comes with Google's Tensor G2 chip, a smooth OLED display, and a powerful camera system.</li>
+    </ul>
+    <div class="button-container">
+    <a class="learn-more-button" href="https://www.gsmarena.com/google_pixel_7_pro-11908.php/">Learn more</a>
+    <a class="buy-now-button" href="https://www.apple.com/ph/iphone-14-pro/">Buy now</a>
+    </div>
+    </figcaption>
+  </figure>
+  <div class="js-slider_nav">
+    <label class="js-slider_nav_item s-nav-1 prev" for="s-3"></label>
+    <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
+    <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
+    <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
+    <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
+    <label class="js-slider_nav_item s-nav-3 next" for="s-1"></label>
+  </div>
+  <div class="js-slider_indicator">
+    <div class="js-slider-indi indi-1"></div>
+    <div class="js-slider-indi indi-2"></div>
+    <div class="js-slider-indi indi-3"></div>
+  </div>
+</div>
+  
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <ul class="footer-nav">
+                <li><a href="https://www.kimstore.com/">Shop</a></li>
+                <li><a href="https://www.apple.com/ph/iphone/">iPhone</a></li>
+                <li><a href="https://store.google.com/us/?hl=en-US&regionRedirect=true/">Google</a></li>
+                <li><a href="https://www.samsung.com/ph/offer/fold6-flip6/?cid=ph_pd_ppc_google-ads_f2h24_pre-order_MX-FLAGSHIP-Q6B6-SAMSUNGOMNIBUS-WARM-EXACT_search-text-ads_MX-FLAGSHIP-Q6B6-SAMSUNGOMNIBUS-WARM_none_pfm&utm_source=google-ads&utm_medium=search&utm_campaign=MX-FLAGSHIP-Q6B6-SAMSUNGOMNIBUS-WARM&utm_term=Hot-MX-FLAGSHIP-Q6B6-SAMSUNGOMNIBUS-WARM&utm_content=none&gad_source=1&gclid=Cj0KCQjwtZK1BhDuARIsAAy2Vztsr6pVii_kdb1_SG6HoLz-R2uSuNpc_crinw-UFfItr0ap_389LiYaAuPTEALw_wcB/">Samsung</a></li>
+                <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBsLrRWH_39PHeG7jN5pVh8PjmXTw0OgIh6Q&s/">Support</a></li>
+            </ul>
+            <ul class="footer-social">
+                <li><a href="https://www.facebook.com/mikaellaann.masiglat/"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/mikamasiglat//"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://github.com/MJmasiglat/"><i class="fab fa-github"></i> Github</a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="copyright">
+            <p>&copy; 2024 Masiglat</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
