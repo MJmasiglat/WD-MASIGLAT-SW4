@@ -55,7 +55,7 @@ header {
     padding: 5px 10px;
 }
 
-.landing-page nav a.feature {
+.landing-page nav a.feature{
     margin-left: -10px;
 }
 
@@ -127,6 +127,12 @@ article img {
 
 article p {
     margin-top: 20px;
+}
+
+article h3 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 1.2em;
 }
 
 .learn-more-button:hover {
