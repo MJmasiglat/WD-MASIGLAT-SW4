@@ -41,7 +41,7 @@ header {
 
 .landing-page nav {
     display: flex;
-    gap: 6px;
+    gap: 16px; /* Adjusted for better spacing */
     margin-left: -10px;
 }
 
@@ -54,7 +54,7 @@ header {
     padding: 5px 10px;
 }
 
-.landing-page nav a.feature{
+.landing-page nav a.feature {
     margin-left: -10px;
 }
 
@@ -92,7 +92,7 @@ header {
 
 h1 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 100px; /* Adjusted to align with fixed header */
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), /* White glow */
                  0 0 10px rgba(255, 255, 255, 0.6), /* White glow */
                  0 0 20px rgba(255, 255, 255, 0.4); /* White glow */
@@ -163,6 +163,7 @@ input[type="radio"] {
 
 figcaption {
     display: block;
+    text-align: center;
 }
 
 .wo-h3 {
@@ -170,7 +171,7 @@ figcaption {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid #ffb711;
-    text-align: center; /* Add this line to center the text */
+    text-align: center;
 }
 
 .c-label {
@@ -187,30 +188,18 @@ figcaption {
 .view-sm {
     display: none;
 }
+
 .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px; /* Adjust as needed */
-}
-
-.learn-more-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.learn-more-button:hover {
-    background-color: #ffffff;
-}
-.learn-more-button {
-    display: inline-block;
-    padding: 10px 20px;
+    gap: 10px;
     margin-top: 10px;
+}
+
+.learn-more-button {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: transparent;
     color: #ffffff;
     text-decoration: none;
@@ -221,32 +210,7 @@ figcaption {
 
 .learn-more-button:hover {
     background-color: #000000;
-    color: white;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; 
-    margin-top: 10px; 
-}
-
-.learn-more-button, .buy-now-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: transparent; 
-    color: #007BFF; 
-    text-decoration: none;
-    border: 2px solid #007BFF;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease; 
-}
-
-.learn-more-button:hover, .buy-now-button:hover {
-    background-color: #007BFF; 
-    color: white; 
+    color: #ffffff;
 }
 
 .js-slider_nav {
@@ -358,8 +322,6 @@ figcaption {
     transform: translate3d(-50%, -50%, 0) scale(2.5);
 }
 
-
-
 /* Footer styles */
 .footer {
     background-color: #3a4f81;
@@ -411,12 +373,13 @@ figcaption {
     text-align: center;
     margin-top: 20px;
 }
+
 .wo-credit {
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0; 
-    text-align: center; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
