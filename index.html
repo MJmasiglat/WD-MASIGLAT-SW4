@@ -1,100 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Feature 2 - Top Smartphones</title>
-   <link rel="stylesheet" href="../../pages/page2/assets/css/style.css">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Display</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="landing-page">
-                <div class="logo">Seatwork 4</div> 
-                <div class="navbar">
-                    <nav>
-                        <a href="../../index.html">Home</a>
-                        <a href="../../pages/page1/index.html">Feature 1</a>
-                        <a href="#">Feature 2</a>   
-                    </nav>
-                </div>
-            </div>  
+    <video autoplay loop muted id="background-video">
+        <source src="./assets/vids/gadgets.mp4" type="video/mp4">
+    </video>
+    <div class="landing-page">
+        <div class="logo">Seatwork 4</div> 
+        <div class="navbar">
+            <nav>
+            <a href="#">Home</a>
+            <a href="../../pages/page1/index.html">Feature 1</a>
+            <a href="../../pages/page2/index.html">Feature 2</a>   
+            </nav>
+            
         </div>
-    </header>
+    </div>
 
-    <h1>Top Smartphones</h1>
-</header>
-  
-<input type="radio" id="s-1" name="slider-control" checked="checked">
-<input type="radio" id="s-2" name="slider-control">
-<input type="radio" id="s-3" name="slider-control">
-<div class="js-slider">
-  <figure class="js-slider_item img-1">
-    <div class="js-slider_img">
-      <video class="c-img-w-full" src="assets/vids/iPhone 256 Pro.mp4" controls autoplay muted></video>
+    <div class="header-text">
+        <div class="text-content">
+            <h3>Welcome!</h3>
+            <h1>Different Displays</h1>
+            <p>This webpage will showcase two different types of Feature Display.</p>
+            <a href="./pages/page1/index.html" class="feature-link">
+                <img src="assets/img/laptop.jpg" alt="Feature 1">
+                <span class="feature-text">Feature 1</span>
+            </a>
+            <a href="./pages/page2/index.html" class="feature-link">
+                <img src="assets/img/smartphones.jpg" alt="Feature 2">
+                <span class="feature-text">Feature 2</span>
+            </a>
+        </div>
     </div>
-    <figcaption class="wo-caption">
-      <h3 class="wo-h3">
-        <div class="c-label">iPhone 256 Pro</div>
-        <br class="view-sm mb-s"></h3>
-      <ul class="wo-credit">
-        <li>iPhone 256 Pro features a stunning Super Retina XDR display, A16 Bionic chip, and advanced camera system.</li>
-      </ul>
-      <div class="button-container">
-        <a class="learn-more-button" href="https://www.gsmarena.com/apple_iphone_14_pro-11860.php/">Learn more</a>
-        <a class="buy-now-button" href="https://www.apple.com/ph/iphone-14-pro/">Buy now</a>
-      </div>
-    </figcaption>
-  </figure>
 
-  <figure class="js-slider_item img-2">
-    <div class="js-slider_img">
-        <video class="c-img-h-full" src="assets/vids/Galaxy S23 Series.mp4" controls autoplay muted></video>
-    </div>
-    <figcaption class="wo-caption">
-      <h3 class="wo-h3">Samsung Galaxy Milkyway Ultra</h3>
-      <ul class="wo-credit">
-        <li>Samsung Galaxy Milkyway Ultra boasts a large AMOLED display, Snapdragon 8 Gen 2, and a versatile camera setup.</li>
-    </ul>
-    <div class="button-container">
-      <a class="learn-more-button" href="https://www.gsmarena.com/samsung_galaxy_s23_ultra-12024.php/">Learn more</a>
-      <a class="buy-now-button" href="https://www.apple.com/ph/iphone-14-pro/">Buy now</a>
-    </div>
-    </figcaption>
-    
-  </figure>
-  <figure class="js-slider_item img-3">
-    <div class="js-slider_img">
-      <video class="c-img-h-full" src="assets/vids/Pixel 7 Pro.mp4" controls autoplay muted></video></div>
-    <figcaption class="wo-caption">
-      <h3 class="wo-h3">Google Pixel Note Pro</h3>
-      <ul class="wo-credit">
-        <li>The Google Pixel 7 Pro comes with Google's Tensor G2 chip, a smooth OLED display, and a powerful camera system.</li>
-    </ul>
-    <div class="button-container">
-    <a class="learn-more-button" href="https://www.gsmarena.com/google_pixel_7_pro-11908.php/">Learn more</a>
-    <a class="buy-now-button" href="https://www.apple.com/ph/iphone-14-pro/">Buy now</a>
-    </div>
-    </figcaption>
-  </figure>
-  <div class="js-slider_nav">
-    <label class="js-slider_nav_item s-nav-1 prev" for="s-3"></label>
-    <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
-    <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
-    <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
-    <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
-    <label class="js-slider_nav_item s-nav-3 next" for="s-1"></label>
-  </div>
-  <div class="js-slider_indicator">
-    <div class="js-slider-indi indi-1"></div>
-    <div class="js-slider-indi indi-2"></div>
-    <div class="js-slider-indi indi-3"></div>
-  </div>
-</div>
-  
-<footer class="footer">
+    <footer class="footer">
     <div class="container">
         <div class="footer-content">
             <ul class="footer-nav">
@@ -106,7 +53,7 @@
             </ul>
             <ul class="footer-social">
                 <li><a href="https://www.facebook.com/mikaellaann.masiglat/"><i class="fab fa-facebook"></i> Facebook</a></li>
-                <li><a href="https://www.instagram.com/mikamasiglat//"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.instagram.com/mikamasiglat/"><i class="fab fa-instagram"></i> Instagram</a></li>
                 <li><a href="https://github.com/MJmasiglat/"><i class="fab fa-github"></i> Github</a></li>
             </ul>
         </div>
